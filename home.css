@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #995FA3;
+  background: linear-gradient(135deg, #5b2c83, #7d3cff, #ff9f43);
   display: flex;
   align-items: center;
   padding-top: 10px;
@@ -24,19 +24,23 @@
 
 #streak-box {
   width: calc(100% - 40px);
+  height: 400%;
   margin: 140px 20px 0;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  padding: 20px;
-  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
+
 
 #Logo {
   font-family: "Emblema One", system-ui;
   font-weight: 400;
   font-size: 300%;
   font-style: normal;
-  color: #D4C5E2;
+  color: white;
   margin: 0;
   margin-left: 20px;
   padding: 0;

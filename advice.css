@@ -1,0 +1,34 @@
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #5b2c83, #7d3cff, #ff9f43);
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container-banner {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-top: 200px;
+  background-color: #995FA3;
+}
+
+#Logo {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-size: 300%;
+  font-style: normal;
+  color: white;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
