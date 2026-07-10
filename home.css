@@ -20,6 +20,8 @@ a {
   margin: 0 auto;
 }
 
+
+/* Bottom navigation */
 .container {
   position: fixed;
   bottom: 15px;
@@ -41,45 +43,87 @@ a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
 }
 
-#streak-box {
-  width: calc(100% - 40px);
-  height: 400%;
-  margin: 140px 20px 0;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+/* Wrapper for streak + notifications */
+#content {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  gap: 30px;
+  margin: 140px 40px 120px;
+  align-items: flex-start;
 }
 
 
+/* Streak box */
+#streak-box {
+  width: 50%;
+  height: 10vh;
+  padding-top: 3vh;
+
+  background: rgb(141, 13, 232);
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  text-align: center;
+  font-size: larger;
+}
+
+
+/* Notifications box */
+#notifs {
+  width: 40%;
+  height: 60vh;
+
+  background: #f6bb84;
+
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+  padding: 20px;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Logo */
 #Logo {
   font-family: "Emblema One", system-ui;
   font-weight: 400;
   font-size: 300%;
   font-style: normal;
+
   color: white;
+
   margin: 0;
   margin-left: 20px;
   padding: 0;
 }
 
+
+/* Streak text */
 #streak {
   font-size: 200%;
+
   margin: 0;
   padding: 0;
+
   font-family: "Stack Sans Headline", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
+
   background: linear-gradient(to bottom, #c94000, #ffc8a6);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   background-clip: text;
-  /* Fallback color for browsers that don't support background-clip on text */
   color: #ffc8a6;
 }
+
 
 body {
   background-color: #c492ed;
